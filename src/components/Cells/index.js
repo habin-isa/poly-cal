@@ -1,6 +1,6 @@
 import React from 'react';
 // import * as S from './styles';
-import { func, object, instanceOf } from 'prop-types';
+import { object, instanceOf } from 'prop-types';
 
 const Cells = ({ dateFns, currentDate, selectedDate }) => {
   const monthStart = dateFns.startOfMonth(currentDate);
