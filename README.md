@@ -9,11 +9,9 @@
 - \$ yarn
 - \$ yarn start
 
-### Examples contained
+### Use the app
 
-- Styled components
-- Jest testing
-- Proptypes
+https://poly-cal.herokuapp.com/
 
 ### Tech
 
