@@ -1,9 +1,15 @@
 import React from 'react';
 import * as S from './styles';
+import Calendar from '../Calendar';
 // import { string } from 'prop-types';
 
 const App = () => {
-  return <S.Wrapper>poly-cal</S.Wrapper>;
+  return (
+    <S.Wrapper>
+      poly-cal
+      <Calendar />
+    </S.Wrapper>
+  );
 };
 
 export default App;
