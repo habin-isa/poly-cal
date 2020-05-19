@@ -1,18 +1,9 @@
 import React, { useState } from 'react';
 import * as dateFns from 'date-fns';
 import './Calendar.css';
-
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(new Date());
-
-  const nextMonth = () => {
-    setCurrentDate(dateFns.addMonths(currentDate, 1));
-  };
-  const prevMonth = () => {
-    setCurrentDate(dateFns.subMonths(currentDate, 1));
-  };
-
   const header = () => {
     const dateFormat = 'MMMM yyyy';
     return (
@@ -33,14 +24,31 @@ const Calendar = () => {
       </div>
     );
   };
-
+  const daysOfWeek = () => {
+    const dateFormat = 'ddd';
+    const days = [];
+    let startDate = dateFns.startOfWeek(currentDate);
+    for (let i = 0; i < 7; i++) {
+      days.push(
+        <div className="column col-center" key={i}>
+          {dateFns.format(dateFns.addDays(startDate, i), dateFormat)}
+        </div>
+      );
+    }
+    return <div className="days row">{days}</div>;
+  };
+  const nextMonth = () => {
+    setCurrentDate(dateFns.addMonths(currentDate, 1));
+  };
+  const prevMonth = () => {
+    setCurrentDate(dateFns.subMonths(currentDate, 1));
+  };
   return (
     <div className="calendar">
       <div>{header()}</div>
-      {/* <div>{daysOfWeek()}</div> */}
+      <div>{daysOfWeek()}</div>
       {/* <div>{cells()}</div> */}
     </div>
   );
 };
-
 export default Calendar;
