@@ -1,14 +1,13 @@
-# React haboilerplate
+# poly-cal
 
-### Base for future React project with simple dependencies
+### Calendar component built from scratch
 
 ### To run the project
 
-- \$ git clone https://github.com/habin-isa/react-haboilerplate.git
-- \$ cd react-haboilerplate
+- \$ git clone https://github.com/habin-isa/poly-cal.git
+- \$ cd poly-cal
 - \$ yarn
 - \$ yarn start
-- Change name of remote and git remote to use as boilerplate for another project
 
 ### Examples contained
 
