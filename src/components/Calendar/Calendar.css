@@ -16,7 +16,6 @@
   font-feature-settings: 'liga';
 }
 
-/* GRID */
 .row {
   margin: 0;
   padding: 0;
@@ -33,7 +32,7 @@
   flex-basis: 0;
   max-width: 100%;
 }
-/* Calendar */
+
 .calendar {
   display: block;
   position: relative;
@@ -58,7 +57,7 @@
 .calendar .header .icon:hover {
   transform: scale(1.75);
   transition: 0.25s ease-out;
-  color: dodgerblue;
+  color: #716bff;
 }
 .calendar .header .icon:first-of-type {
   margin-left: 1em;
@@ -66,14 +65,7 @@
 .calendar .header .icon:last-of-type {
   margin-right: 1em;
 }
-.calendar .days {
-  text-transform: uppercase;
-  font-weight: 400;
-  color: gray;
-  font-size: 70%;
-  padding: 0.75em 0;
-  border-bottom: 1px solid lightgray;
-}
+
 .calendar .body .cell {
   position: relative;
   height: 6em;
@@ -88,8 +80,8 @@
   transition: 0.5s ease-out;
 }
 .calendar .body .selected {
-  border-left: 10px solid transparent;
-  border-image: linear-gradient(45deg, #1affa0 0%, #cff153 40%);
+  border-left: 20px solid transparent;
+  border-image: linear-gradient(45deg, #716bff 0%, #716bff 30%);
   border-image-slice: 1;
 }
 .calendar .body .row {
@@ -120,7 +112,7 @@
 .calendar .body .cell .bg {
   font-weight: 700;
   line-height: 1;
-  color: #1affa0;
+  color: #716bff;
   opacity: 0;
   font-size: 5em;
   position: absolute;

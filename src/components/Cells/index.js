@@ -15,14 +15,12 @@ const Cells = ({ dateFns, currentDate, selectedDate }) => {
   while (day <= endDate) {
     for (let i = 0; i < 7; i++) {
       formattedDate = dateFns.format(day, dateFormat);
-      const cloneDay = day;
       days.push(
         <div
           className={`column cell ${
             !dateFns.isSameMonth(day, monthStart) ? 'disabled' : dateFns.isSameDay(day, selectedDate) ? 'selected' : ''
           }`}
           key={day}
-          // onClick={() => onDateClick(dateFns.parse(cloneDay))}
         >
           <span className="number">{formattedDate}</span>
           <span className="bg">{formattedDate}</span>

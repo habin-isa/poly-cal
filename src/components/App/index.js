@@ -5,7 +5,7 @@ import Calendar from '../Calendar';
 const App = () => {
   return (
     <S.Wrapper>
-      <b>poly-cal</b>
+      <S.LeftColumn>poly-cal</S.LeftColumn>
       <Calendar />
     </S.Wrapper>
   );
