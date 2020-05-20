@@ -2,6 +2,8 @@
 
 ### Calendar component built from scratch
 
+Displays a calendar in grid form, like the output from the UNIX cal command.
+
 ### To run the project
 
 - \$ git clone https://github.com/habin-isa/poly-cal.git

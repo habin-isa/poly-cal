@@ -1,5 +1,4 @@
 import React from 'react';
-// import * as S from './styles';
 import { func, object, instanceOf } from 'prop-types';
 
 const Header = ({ dateFns, setCurrentDate, currentDate }) => {
