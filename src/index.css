@@ -2,4 +2,21 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: block;
+  width: 100%;
+  padding: 1.75em 0;
+  border-bottom: 1px solid lightgray;
+  background: white;
+  text-align: center;
 }
